@@ -2,10 +2,13 @@ package com.example.authsystembamba.models;
 
 import com.example.authsystembamba.enums.Role;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 @Entity
-@Data
+//@Builder
+@Getter
+@Setter
+@RequiredArgsConstructor
 @Table(name = "users")
 public class User {
     @Id

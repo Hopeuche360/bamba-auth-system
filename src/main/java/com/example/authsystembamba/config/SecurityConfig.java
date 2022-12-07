@@ -38,7 +38,7 @@ public class SecurityConfig {
                 .exceptionHandling().authenticationEntryPoint(authEntryPoint).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeHttpRequests(authorize ->
-                        authorize.requestMatchers("/**", "/api/v1/ping", "/h2-console").permitAll()
+                        authorize.requestMatchers("/**", "/api/v1/auth/**", "/api/v1/ping", "/h2-console").permitAll()
                                 .anyRequest().authenticated())
                 .httpBasic().disable();
 
