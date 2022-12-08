@@ -4,8 +4,6 @@ import com.example.authsystembamba.annotations.PasswordValueMatch;
 import com.example.authsystembamba.annotations.ValidPassword;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
